@@ -23,9 +23,9 @@ hr {
 }
 
 .container {
-   height: 95vh;
+   height: 96vh;
     width: 50%;
-    border: 1px solid black;
+    border: 2px solid black;
     background-color: rgba(211, 208, 189, 0.3);
 }
 
@@ -63,8 +63,51 @@ a {
       transform: translateY(-150%);
       border-radius: 10px;
   }
+ 
 
+  .webshow {
+    display: inline-block;
+    position: fixed;
+    bottom: 245px;
+    right: 70px;
+    text-align: center;
+  }
+
+  .box {
+    border: solid 2px black;
+    height: 165px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
   @media (max-width: 768px) {
-    
-  }
+    header {
+        text-align: center;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        padding: 0 15px;
+    }
+
+    .Summary, .Contact, .exp, .edu, .tools, .skills, .projects, .interest, .certificates, .languages, .webshow {
+        padding: 10px;
+    }
+
+    .webshow {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    .webshow {
+        display: none;
+    }
+}

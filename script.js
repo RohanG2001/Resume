@@ -1,7 +1,9 @@
 // Function to check the screen width and show an alert if on mobile
 function checkScreenWidth() {
-    if (window.innerWidth <= 768) { // 768px is a common breakpoint for mobile devices
-        alert("This site is designed for desktop use only.");
+    if (window.innerWidth <= 1200) { // 768px is a common breakpoint for mobile devices
+        if (confirm("This site is designed for desktop use only. Click ok download Resume?")) {
+            window.location.href = 'images/Screenshot 2024-06-12 161811.png'; // Replace with the actual path to your CV
+        }
     }
 }
 

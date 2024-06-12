@@ -73,16 +73,7 @@ a {
     text-align: center;
   }
 
-  .box {
-    border: solid 2px black;
-    height: 165px;
-    width: 300px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+
 
   @media (max-width: 768px) {
     header {
